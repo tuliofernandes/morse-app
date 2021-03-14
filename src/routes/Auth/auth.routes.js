@@ -1,5 +1,5 @@
-const Router = require('express').Router;
-const users = require('../../mock/Users');
+import { Router } from 'express';
+import users from '../../mock/Users';
 
 class AuthRoutes {
     path;
@@ -31,4 +31,4 @@ class AuthRoutes {
     }
 }
 
-module.exports = AuthRoutes;
+export default  AuthRoutes;
