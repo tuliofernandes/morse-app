@@ -1,6 +1,6 @@
-const express = require('express');
-const morgan = require('morgan');
-const AuthRoutes = require('./routes/Auth/auth.routes');
+import express from 'express';
+import morgan from 'morgan';
+import AuthRoutes from './routes/Auth/auth.routes';
 
 class Api {
     #express = express();
@@ -33,4 +33,4 @@ class Api {
     }
 }
 
-module.exports = Api;
+export default Api;
