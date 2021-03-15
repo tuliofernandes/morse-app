@@ -18,6 +18,7 @@ class AuthRoutes {
         });
 
         this.router.post('/login', (req, res) => {
+            // console.log('body: ', req.body)
             const { email } = req.body;
             const foundUser = users.find(user => user.email === email);
 
